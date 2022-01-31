@@ -1,0 +1,97 @@
+.form {
+    display: flex;
+    width: 80vw; 
+    height: 80vh;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: 40%; 
+    border-radius: 5px;
+}
+
+.information {
+    display: flex;
+    padding: 10px;
+    height: 100%; 
+    width: 40%; 
+    flex-direction: column;
+    justify-content: stretch;
+    overflow-y: auto;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.information_text {
+    padding:  0 10px;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.information_buttons {
+    align-self: center;
+    margin-top: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+.map {
+    width: 60%; 
+    height: 80vh; 
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .form {
+        width: 98vw;
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .information {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .img {
+        height: 100%; 
+        width: 50%; 
+    }
+    .information_text {
+        justify-content: stretch;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .information {
+        flex-direction: column;
+    }
+    .img{
+        width: 100%;
+        height: 40vh;
+    }
+    .map {
+        width: 100%;
+        height: 40vh; 
+    }
+
+    .form {
+        height: 90vh;
+    }
+    
+    
+}

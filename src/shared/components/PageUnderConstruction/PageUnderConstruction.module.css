@@ -1,0 +1,29 @@
+.base {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 20rem;
+    height: 5rem; 
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: 1px dashed orange; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+
+.svg{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    fill: orange; 
+ }
+
+.base h1 {
+    font-size: larger;
+    color: white;
+}

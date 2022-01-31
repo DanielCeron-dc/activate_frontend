@@ -6,4 +6,3 @@ Actívate busca unir a personas con ideas afines en actividades compartidas para
 Juan Andrés Salazar Gonzalez
 Laura Marcela Mendez Rengifo
 Daniel Cerón
-

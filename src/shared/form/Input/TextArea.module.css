@@ -1,0 +1,43 @@
+
+.base {
+    position: relative;
+    width: 100%;
+}
+
+.textArea {
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+
+.textArea:focus { 
+    outline: none !important;
+    border:1px solid mediumseagreen;
+    box-shadow: 0 0 5px mediumseagreen;
+}
+
+.label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.span {
+    color: grey; 
+    font-size: 19px;
+    margin: 0.5rem; 
+}
+
+
+
+.base.notEmpty .label .span {
+    display: none;
+}
+
+
