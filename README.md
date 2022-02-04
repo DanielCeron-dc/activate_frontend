@@ -7,4 +7,7 @@ Juan Andrés Salazar Gonzalez
 Laura Marcela Mendez Rengifo
 Daniel Cerón
 
-### Prueba Vista
+### Componentes
+
+El sistema esta compuesto de los siguientes componentes:
+

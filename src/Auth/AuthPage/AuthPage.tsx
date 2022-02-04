@@ -1,15 +1,11 @@
 import React from 'react';
 import AuthForm from '../AuthForm/AuthForm';
 import styles from './AuthPage.module.css'; 
-
 import backGround from '../../assets/img/bg1.png';
 import girlImage from '../../assets/img/girl1.png';
 import rockImage from '../../assets/img/rock1.png';
-
-
 import { CSSProperties } from 'react';
 import { motion } from 'framer-motion';
-
 
 const imgStyle: CSSProperties = {
     width: '100%',

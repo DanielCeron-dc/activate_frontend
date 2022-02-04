@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import {useHistory, useParams} from "react-router-dom"; 
-
 import { PlaceInterface } from '../../PlaceInterface';
 import "./PlaceItem.css";
-
 import { motion, Variants } from 'framer-motion';
 
 

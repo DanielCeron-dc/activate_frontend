@@ -1,5 +1,4 @@
 import React, { CSSProperties, useState } from 'react';
-
 import styles from './Form.module.css';
 import useForm from '../../hooks/useForm';
 import Input from '../../shared/form/Input/Input';
@@ -11,18 +10,14 @@ const inputStyle: CSSProperties = {
     backgroundColor: 'rgba(30, 30, 30, 1)',
     color: 'white',
 }
-
 const buttonStyle: CSSProperties = {
     height: '40px',
     padding: '0 10px',
 }
-
-
-const AuthForm:React.FC = () => {
+const AuthForm:React.FC = () => { 
     
     const { register, onSubmit } = useForm();
     const [creatingAccount, setCreatingAccount] = useState(false); 
-
     return <motion.form
         initial={{ boxShadow: '0px 0px 0px 0px mediumseagreen' }}
         animate={{ boxShadow: '0px 0px 40px 0px mediumseagreen' }}

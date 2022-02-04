@@ -14,12 +14,9 @@
     color: white;
     text-align: center;
 }
-
 .form a {
     color: mediumseagreen;
 }
-
-
 .buttons {
     width: 70%;
     display: flex; 

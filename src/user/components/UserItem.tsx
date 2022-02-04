@@ -20,7 +20,7 @@ const userItem: React.FC<UserItemProps> = ({ user }) => {
                 <div className={styles.userItemImage}><Avatar src={user.image} width={100} height={100} /></div>
                 <div className={styles.userItemInfo}>
                     <h2>{user.name}</h2>
-                    <h3> {user.placesCount} {user.placesCount === 1 ? "place" : "places"}</h3>
+                    <h3> {user.placesCount} {user.placesCount === 1 ? "Common Friend" : "Common Friends"}</h3>
                 </div>
             </Link>
         </Card>

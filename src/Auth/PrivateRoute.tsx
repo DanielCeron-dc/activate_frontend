@@ -6,8 +6,6 @@ import { useAuth } from "./useAuth";
 interface iPrivateroute extends RouteProps {
     
 }
-
-
 const PrivateRoute:React.FC<iPrivateroute> = ({ children, ...rest }) =>  {
     let {isAuth }= useAuth();
     return (
