@@ -7,4 +7,6 @@ Juan Andrés Salazar Gonzalez
 Laura Marcela Mendez Rengifo
 Daniel Cerón
 
-### Prueba Vista
+### Componentes
+El sistema esta compuesto por
+![Componentes](https://user-images.githubusercontent.com/74669340/152578560-0fd9c1c7-7a9b-4541-a348-3ec32f33e206.PNG)
