@@ -19,7 +19,7 @@ function App() {
   return <div className="App">
     <AnimatePresence>
       <Route exact path="/"  >
-        <Page> <h1>hola</h1> </Page>
+        <Page></Page>
       </Route>
 
       <Route exact path="/users" >

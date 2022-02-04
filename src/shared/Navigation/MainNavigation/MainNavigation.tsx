@@ -45,7 +45,7 @@ const MainNavigation: React.FC<{style?:CSSProperties}> = (props) => {
             </button>
             <h1 className="main-navigation__title">
                 <Link to="/">
-                    Your places
+                    Activate
                 </Link>
             </h1>
             <nav className="main-navigation__header-nav">
