@@ -30,8 +30,12 @@ const rockStyle: CSSProperties = {
     height: '100%'
 }
 
+type IHandler = {
+    handlerLogin:() => void
+}
 
-const AuthPage:React.FC = () => {
+
+const AuthPage:React.FC<IHandler> = (props) => {
     
     return <div className={styles.authPage}>
         <motion.img
@@ -59,7 +63,7 @@ const AuthPage:React.FC = () => {
             animate={{ x: -25 }}
             transition={{ ease: 'easeOut', duration: 4, repeat: Infinity, repeatType: "reverse" }}
         />
-        <AuthForm />
+        <AuthForm handlerLogin={props.handlerLogin}/>
     </div>
 }
 export default AuthPage;

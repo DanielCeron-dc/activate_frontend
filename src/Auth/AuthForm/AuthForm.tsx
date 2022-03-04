@@ -4,6 +4,7 @@ import useForm from '../../hooks/useForm';
 import Input from '../../shared/form/Input/Input';
 import Button from '../../shared/form/Button/Button';
 import { motion } from 'framer-motion';
+import { Link, useHistory} from 'react-router-dom';
 
 
 const inputStyle: CSSProperties = {
@@ -14,8 +15,12 @@ const buttonStyle: CSSProperties = {
     height: '40px',
     padding: '0 10px',
 }
-const AuthForm:React.FC = () => { 
-    
+type IHandler = {
+    handlerLogin:() => void
+}
+
+const AuthForm:React.FC<IHandler> = (props) => { 
+    const history = useHistory()
     const { register, onSubmit } = useForm();
     const [creatingAccount, setCreatingAccount] = useState(false); 
     return <motion.form
@@ -24,7 +29,7 @@ const AuthForm:React.FC = () => {
         transition={{ duration: 4 , repeat: Infinity, repeatType: 'reverse', delay: 4 }}
         action=""
         className={styles.form}
-        onSubmit={onSubmit(data => { console.log(data) })}
+        onSubmit={onSubmit(data => { console.log(data); props.handlerLogin(); history.push("/users")})}
     >
             <Input ref={register} type="email" label='email' required name='email' style={inputStyle}/>
             <Input ref={register} type="password" label='password' required name='password' style={inputStyle} />
@@ -43,9 +48,10 @@ const AuthForm:React.FC = () => {
             
             </p>
             <div className={styles.buttons}>
-            <Button type="submit" style={buttonStyle}>
-                {creatingAccount ? 'create account' : 'login'}
+            <Button style={buttonStyle}>
+                {"Login"}
             </Button>
+            
             </div>
     </motion.form>
 

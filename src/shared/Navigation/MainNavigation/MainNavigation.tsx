@@ -9,9 +9,15 @@ import Backdrop from '../../components/Backdrop/Backdrop';
 
 import { AnimatePresence } from "framer-motion";
 
+type NavLinksProps = {
+    isLogin:boolean
 
-const MainNavigation: React.FC<{style?:CSSProperties}> = (props) => {
+};
 
+
+const MainNavigation: React.FC<NavLinksProps&{style?:CSSProperties}> = (props) => {
+
+    const {isLogin} = props
     const [drawerIsOpen, setDrawerIsOpen] = useState<boolean>(false);
     const history = useHistory();
 
@@ -29,7 +35,7 @@ const MainNavigation: React.FC<{style?:CSSProperties}> = (props) => {
                     <Backdrop onClick={() => setDrawerIsOpen(false)} />
                     <SideDrawer>
                         <nav className="main-navigation__drawer-nav">
-                            <NavLinks />
+                            <NavLinks isLogin={isLogin}/>
                         </nav>
                     </SideDrawer>
                 </>
@@ -49,7 +55,7 @@ const MainNavigation: React.FC<{style?:CSSProperties}> = (props) => {
                 </Link>
             </h1>
             <nav className="main-navigation__header-nav">
-                <NavLinks />
+                <NavLinks isLogin={isLogin}/>
             </nav>
         </MainHeader>
     </>

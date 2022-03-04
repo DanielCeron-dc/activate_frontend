@@ -28,10 +28,10 @@ const PlaceList: React.FC<PlaceListProps> = (props) => {
                     alignItems: "center",
                     padding: "20px"
                 }}>
-                    <h2>No places found. Maybe create one ? </h2>
+                    <h2>You don't have friends, do you want to add one?</h2>
                     <Button
                         onClick={() => history.push(url + "/new")}
-                    >Add Place</Button>
+                    >Add Friend</Button>
                 </div>
             </Card>
         </div> :
